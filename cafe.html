@@ -1,1 +1,47 @@
 
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cafe Menu</title>
+        <style>
+            body  {
+                background-color :pink;
+                text-align:center;
+
+            }
+            p{
+                color:blue;
+                font-size:20px;
+            }
+
+            button {
+
+                padding:20px;
+                background-color:maroon
+                 
+
+            }
+            
+        </style>
+    </head>
+    <body>
+         <h1>"Welcome to Ruby's Cafe!"</h1>
+         <img src="moderncafe.jpg" width="300px" height="300px">
+         <p id="orderCoffee">What would you like to order today?</p>
+         <br><br>
+         <button onclick="magicCoffee()">Magic Coffee</button>
+         <button onclick="rainbowCake()">Rainbow Cake</button>
+         <button onclick="sparkleTea()">Sparkle Tea</button>
+         <script>
+            function magicCoffee() {
+                document.getElementById("orderCoffee").innerText = "Great choice! Your Magic coffee is coming right up!";
+            }
+            function rainbowCake() {
+                document.getElementById("orderCoffee").innerText = "Great choice! Your Rainbow cake is coming right up!";
+            }
+            function sparkleTea() {
+                document.getElementById("orderCoffee").innerText = "Great choice! Your Sparkle tea is coming right up!";
+            }
+         </script>
+    </body>
+</html>
